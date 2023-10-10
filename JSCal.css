@@ -1,0 +1,52 @@
+*{
+
+	margin: 0px;
+	padding: 0px;
+}
+.wrap 
+{  
+	height:1500px;
+	width: 1600px;
+	background-color: Gray;
+	
+
+
+}
+.calculator
+{
+	height: 600px;
+	width: 600px;
+	background-color: lightgreen;
+ margin-left: 500px;
+ padding-top: 100px;
+ padding-left: 100px;
+align-top: center;
+
+
+}
+.calculator form td Button
+{
+	height: 90px;
+	width: 90px;
+	background-color: yellow;
+	font-size: 30px;
+
+
+}
+.calculator form table
+{
+	border-collapse: collapse;
+	height: 400px;
+	width: 400px;
+
+	
+  
+
+}
+.calculator form table textarea
+{
+	width: 450px;
+	height: 70px;
+	color: red;
+	font-size: 50px;
+}

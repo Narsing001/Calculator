@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="Stylesheet" type="text/css" href="JSCal.css">
+	<script> 
+    
+    var inputstr=" ";
+    function inputstring(value)
+    {   inputstr+=value;
+    	document.myform.input.value=inputstr;
+    }
+
+
+
+	</script>
+
+	<title> Calculator </title>
+</head>
+<body>
+	<div class="wrap">
+	<div class="calculator" >		
+ <form name="myform"> 
+<table  border="5px">
+<tr>
+	<td colspan="5"><textarea name="input"></textarea></td>
+<tr/> 
+<tr> 
+<td><Button type="button" onClick="inputstring('1')">1</Button> </td>
+<td><Button type="button" onClick="inputstring('2')" >2</Button> </td>
+<td><Button type="button" onClick="inputstring('3')">3</Button> </td>
+<td><Button type="button"  onClick="inputstring('+')">+</Button> </td>
+<td rowspan="2"><Button type="button" onClick="input.value=eval(inputstr)"   style=" height:180px" >=</Button> </td>
+
+</tr>
+
+<tr> 
+<td><Button type="button" onClick="inputstring('4')">4</Button> </td>
+<td><Button type="button" onClick="inputstring('5')">5</Button> </td>
+<td><Button type="button" onClick="inputstring('6')">6</Button> </td>
+<td><Button type="button" onClick="inputstring('-')">-</Button> </td>
+</tr>
+
+<tr> 
+<td><Button type="button" onClick="inputstring('7')">7</Button> </td>
+<td><Button type="button" onClick="inputstring('8')">8</Button> </td>
+<td><Button type="button" onClick="inputstring('9')">9</Button> </td>
+<td><Button type="button" onClick="inputstring('*')">*</Button> </td>
+<td rowspan="2"><Button type="button" onClick="input.value=' ',inputstr=' ' "  style=" height:180px">C</Button> </td>
+
+</tr>
+
+<tr> 
+<td><Button type="button" onClick="inputstring(.)">.</Button> </td>
+<td><Button type="button" onClick="inputstring('0')">0</Button> </td>
+<td><Button type="button" onClick="inputstring('00') ">00</Button> </td>
+<td><Button type="button" onClick="inputstring('/')">/</Button> </td>
+</tr>
+
+</table>
+ </form>
+</div>
+</div>
+</body>
+</html>
